@@ -11,3 +11,5 @@ app.use(bodyParser.json());
 app.get("/", function(request, response) {
     response.status(200).send("Hi I am a chatbot");
 });
+
+app.listen(app.get("port"));
