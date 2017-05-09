@@ -1,0 +1,27 @@
+{
+    "name": "skype-chatbot-poc",
+    "version": "1.0.0",
+    "description": "skype chatbot poc",
+    "main": "index.js",
+    "scripts": {
+        "start": "node server.js",
+        "test": "echo \"Error: no test specified\" && exit 1"
+    },
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/c0demark/skype-chatbot-poc.git"
+    },
+    "keywords": [],
+    "author": "",
+    "license": "ISC",
+    "bugs": {
+        "url": "https://github.com/c0demark/skype-chatbot-poc/issues"
+    },
+    "homepage": "https://github.com/c0demark/skype-chatbot-poc#readme",
+    "dependencies": {
+        "body-parser": "^1.17.1",
+        "botbuilder": "^3.8.0",
+        "express": "^4.15.2",
+        "request": "^2.81.0"
+    }
+}
