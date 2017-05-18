@@ -14,7 +14,7 @@ var httpServer = app.listen(app.get("port"), function() {
     let httpAddress = httpServer.address();
     // console.log(httpAddress);
     // console.log(httpServer);
-    console.log("chatapp is listening on %s:%s", httpAddress.address, httpAddress.port);
+    // console.log("chatapp is listening on %s:%s", httpAddress.address, httpAddress.port);
 });
 
 app.use(bodyParser.urlencoded({ extended: false }));
@@ -24,7 +24,7 @@ app.use("/", function(req, res, next) {
         protocol: req.protocol,
         host: req.get("host"),
     }));
-    console.log(app.get("origin"));
+    // console.log(app.get("origin"));
     next();
 });
 
@@ -48,5 +48,5 @@ var chatbot = new botbuilder.UniversalBot(chatConnector);
 // chatHandler(chatbot);
 
 chatbot.dialog("/", [function(session) {
-    session.send(session.userData);
+    session.send(session.userData.address.user.name);
 }]);
