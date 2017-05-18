@@ -48,5 +48,5 @@ var chatbot = new botbuilder.UniversalBot(chatConnector);
 // chatHandler(chatbot);
 
 chatbot.dialog("/", [function(session) {
-    session.send(send.userData);
+    session.send(session.userData);
 }]);
